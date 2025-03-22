@@ -63,7 +63,7 @@ def get_args():
         help="Base model to be trained",
     )
     parser.add_argument(
-        "--sample", type=int, default=5, help="Number of samples per quesiton type"
+        "--sample", type=int, default=10, help="Number of samples per quesiton type"
     )
     args = parser.parse_args()
 

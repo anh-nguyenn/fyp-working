@@ -1,0 +1,242 @@
+[
+  {
+    "question": "[Dick Miller] appears in what movies in [1959]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"Dick Miller\".?movie wd:P161?e; wd:publication_year \"1959\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"1959\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Dick Miller\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "[Martin Clunes] appeared in films in the year [2000]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?e?actor WHERE {?e wd:publication_year \"2000\"; wd:P161?actor.?actor rdfs:label \"Martin Clunes\". }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"2000\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Martin Clunes\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "[LL Cool J] appears in what movies in [2003]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"LL Cool J\".?movie wd:P161?e; wd:publication_year \"2003\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"2003\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"LL Cool J\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "What films featuring [Henry Bergman] were released in [1936]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT?label?uri WHERE {?uri?rel1?e1 ;?rel2 \"1936\" ; rdfs:label?label.?rel1 rdfs:label \"directed_by\".?e1 rdfs:label \"Henry Bergman\".?rel2 rdfs:label \"release_year\". }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"1936\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Henry Bergman\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "In which movies did [Alan Bates] star in year [1964]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e2 rdfs:label \"Alan Bates\".?movie wd:P161?e1 ; wd:publication_year \"1964\"; rdfs:label?movie_label.?e1 rdfs:label \"year\". }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"1964\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Alan Bates\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "In which movies did [Martin Sheen] appear in [1968]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"Martin Sheen\".?movie wd:P161?e; wd:publication_year \"1968\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"1968\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Martin Sheen\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "In which movies did [Charlie Hunnam] star in year [2002]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"Charlie Hunnam\".?movie wd:P161?e; wd:publication_year \"2002\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"2002\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Charlie Hunnam\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "What films featuring [J\u00e1nos Derzsi] were released in [2007]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"J\u00e1nos Derzsi\".?movie wd:P161?e; wd:publication_year \"2007\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"2007\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"J\u00e1nos Derzsi\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "[Sab\u00fa] appeared in films in the year [1944]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT?label?uri WHERE {?uri?rel1?e1 ;?rel2 \"1944\" ; rdfs:label?label.?rel1 rdfs:label \"has_tags\".?e1 rdfs:label \"Sab\u00fa\".?rel2 rdfs:label \"release_year\". }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"1944\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Sab\u00fa\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "What films featuring [Kim Novak] were released in [1955]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"Kim Novak\".?movie wd:P161?e; wd:publication_year \"1955\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"1955\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Kim Novak\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "What films starred [Amber Benson] in [2002]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"Amber Benson\".?movie wd:P161?e; wd:publication_year \"2002\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"2002\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Amber Benson\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "[Julie Adams] appeared in films in the year [1953]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_title WHERE {?movie wd:P161?actor.?actor rdfs:label \"Julie Adams\".?movie wd:publication_year \"1953\". }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"1953\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Julie Adams\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "[Frank Oz] appeared in films in the year [1982]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"Frank Oz\".?movie wd:P161?e; wd:publication_year \"1982\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"1982\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Frank Oz\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "What movies in [2009] starred [Jordan Ladd]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"Jordan Ladd\".?movie wd:P161?e; wd:publication_year \"2009\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"2009\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Jordan Ladd\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "In [2009], what films did [Thomas Middleditch] star in?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"Thomas Middleditch\".?movie wd:P161?e; wd:publication_year \"2009\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"2009\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Thomas Middleditch\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "What films featuring [Gry Bay] were released in [2005]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT?label?uri WHERE {?uri?rel1?e1 ;?rel2 \"2005\" ; rdfs:label?label.?rel1 rdfs:label \"has_tags\".?e1 rdfs:label \"Gry Bay\".?rel2 rdfs:label \"release_year\". }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"2005\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Gry Bay\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "In what films did [Adam Campbell] act in the year [2006]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"Adam Campbell\".?movie wd:P161?e; wd:publication_year \"2006\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"2006\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Adam Campbell\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "What films featuring [Oliver Reed] were released in [1975]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"Oliver Reed\".?movie wd:P161?e; wd:publication_year \"1975\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"1975\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Oliver Reed\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "What films starred [Rhett Giles] in [2008]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"Rhett Giles\".?movie wd:P161?e; wd:publication_year \"2008\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"2008\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Rhett Giles\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "In which movies did [Emile Hirsch] star in year [2013]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"Emile Hirsch\".?movie wd:P161?e; wd:publication_year \"2013\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"2013\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Emile Hirsch\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "[Will Friedle] appeared in films in the year [2003]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_title WHERE {?e rdfs:label \"Will Friedle\".?movie wd:P161?e; wd:publication_year \"2003\"; rdfs:label?movie_title. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"2003\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Will Friedle\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "In which movies did [Pablo Echarri] star in year [2005]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"Pablo Echarri\".?movie wd:P161?e; wd:publication_year \"2005\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"2005\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Pablo Echarri\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "In what films did [Amr Waked] act in the year [2011]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"Amr Waked\".?movie wd:P161?e; wd:publication_year \"2011\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"2011\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Amr Waked\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "What films featuring [Ralph Meeker] were released in [1957]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"Ralph Meeker\".?movie wd:P161?e; wd:publication_year \"1957\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"1957\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Ralph Meeker\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "In which movies did [Sandra Oh] star in year [2009]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"Sandra Oh\".?movie wd:P161?e; wd:publication_year \"2009\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"2009\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Sandra Oh\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "[Kierston Wareing] appeared in films in the year [2011]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?e?actor WHERE {?movie wd:publication_year \"2011\"; wd:P161?e.?e rdfs:label \"Kierston Wareing\". }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"2011\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Kierston Wareing\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "What films featuring [Anne Heche] were released in [1996]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT?label?uri WHERE {?uri?rel1?e1 ;?rel2 \"1996\" ; rdfs:label?label.?rel1 rdfs:label \"has_tags\".?e1 rdfs:label \"Anne Heche\".?rel2 rdfs:label \"release_year\". }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"1996\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Anne Heche\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "What films featuring [Gilbert Sicotte] were released in [1992]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"Gilbert Sicotte\".?movie wd:P161?e; wd:publication_year \"1992\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"1992\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Gilbert Sicotte\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "[Karen Morley] appeared in films in the year [1934]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?id?actor WHERE {?movie wd:P161?id ; wd:publication_year \"1934\"; rdfs:label?actor. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"1934\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Karen Morley\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "In which movies did [Daniel de Oliveira] appear in [2014]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"Daniel de Oliveira\".?movie wd:P161?e; wd:publication_year \"2014\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"2014\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Daniel de Oliveira\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "What films featuring [Vinod Khanna] were released in [2009]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"Vinod Khanna\".?movie wd:P161?e; wd:publication_year \"2009\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"2009\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Vinod Khanna\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "[Forrest Tucker] appeared in films in the year [1970]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?movie wd:P364?e1 ; wd:publication_year \"1970\"; rdfs:label?movie_label.?e1 rdfs:label \"Forrest Tucker\". }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"1970\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Forrest Tucker\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "In which movies did [Jack Hawkins] appear in [1959]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"Jack Hawkins\".?movie wd:P161?e; wd:publication_year \"1959\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"1959\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Jack Hawkins\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "What films starred [Kiele Sanchez] in [2009]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"Kiele Sanchez\".?movie wd:P161?e; wd:publication_year \"2009\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"2009\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Kiele Sanchez\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "In what films released in year [1970] does [Bourvil] appear?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"Bourvil\".?movie wd:P161?e; wd:publication_year \"1970\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"1970\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Bourvil\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "What movies in [1997] starred [Michael Parks]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"Michael Parks\".?movie wd:P161?e; wd:publication_year \"1997\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"1997\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Michael Parks\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "What films starred [Juan Diego Botto] in [2002]?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"Juan Diego Botto\".?movie wd:P161?e; wd:publication_year \"2002\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"2002\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Juan Diego Botto\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "In what films released in year [2009] does [Irrfan Khan] appear?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"Irrfan Khan\".?movie wd:P161?e; wd:publication_year \"2009\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"2009\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Irrfan Khan\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "In year [1967], what movies did [John McIntire] star in?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"John McIntire\".?movie wd:P161?e; wd:publication_year \"1967\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"1967\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"John McIntire\" . ?rel2 rdfs:label \"release_year\" . }"
+  },
+  {
+    "question": "In what films released in year [1973] does [Bo Hopkins] appear?",
+    "question_type": "actor_to_movie_constraint_year",
+    "sparql_response": "PREFIX wd: <https://www.wikidata.org/entity/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT?movie?movie_label WHERE {?e rdfs:label \"Bo Hopkins\".?movie wd:P161?e; wd:publication_year \"1973\"; rdfs:label?movie_label. }",
+    "sparql": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT DISTINCT ?label ?uri WHERE { ?uri ?rel1 ?e1 ; ?rel2 \"1973\" ; rdfs:label ?label . ?rel1 rdfs:label \"starred_actors\" . ?e1 rdfs:label \"Bo Hopkins\" . ?rel2 rdfs:label \"release_year\" . }"
+  }
+]

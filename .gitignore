@@ -1,9 +1,14 @@
-iMKG.ttl
+KG/*
 qa_test.json
 qa_train.json
 trained_model_id.txt
 processed_train_data.jsonl
 .env
 .venv
+myenv/*
 data
 *__pycache__
+data/*
+result-analysis-llama
+
+streamlit/schema.txt
